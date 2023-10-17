@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>NADB - Home</title>
+</head>
+<body>
+    <section class="homescreen">
+        <div class="carousel-container">
+            <div class="carousel-inner">
+                <div class="carousel-slide"> 
+                    <img src="images/NADB POLICE CATCHING-01.jpg" alt="Slide 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/Architecture.webp" alt="Slide 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/Commercialbuilding1.webp" alt='Slide 3'>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-indicators">
+            <span class="carousel-indicator" onclick="goToSlide(0)"></span>
+            <span class="carousel-indicator" onclick="goToSlide(1)"></span>
+            <span class="carousel-indicator" onclick="goToSlide(2)"></span>
+        </div>
+        
+        <button class="carousel-control prev" onclick="prevSlide()">&#8249;</button>
+        <button class="carousel-control next" onclick="nextSlide()">&#8250;</button>
+
+        <nav>
+            <a href=""><img class="navlogo" src="" alt=""></a>
+            <div class="navLinks" id="navLinks">
+                <img src="icons/close-menu-icon.svg" alt="closing-icon" class="close" onclick="hideMenu()">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="index.html">NADB</a></li>
+                    <!--<li><a href="#testimonial">Testimonials</a></li>-->
+                    <li><a href="#footer">Contact Us</a></li>
+                    <li><a class="enquirybutton" href="#footer">Enquiry</a></li>
+                </ul> 
+            </div>
+            <img src="icons/open-menu-iocn.svg" alt="three-line-menu" class="open" onclick="openMenu()">
+        </nav>
+    </section>
+    <section class="about">
+        <h2 class="sectionheading">About Us</h2>
+        <div class="aboutcontentholder">
+            <div class="aboutimgholder">
+                <img src="images/About Image-01.jpg" alt="">
+            </div>
+            <div class="aboutcard">
+                <h3>NADB</h3>
+                <p>Welcome to the National Anti Duplication Bureau (NADB) - Your Trusted Guardians of Authenticity. NADB is dedicated to eradicating product duplication and counterfeiting, preserving the integrity of markets, and empowering local and indigenous businesses. We tirelessly protect intellectual property rights, promote innovation, and ensure consumers make informed choices. Explore our mission, join the fight, and be a part of a world where authenticity reigns supreme.</p>
+                <p>As a beacon of integrity in the marketplace, NADB leverages a potent blend of vigilant surveillance, policy advocacy, and strategic collaboration with law enforcement agencies. We offer support and resources to businesses to help them thrive in a competitive environment while advocating for stronger regulations to deter duplication and counterfeiting. At NADB, we envision a future where local products retain their value, where innovation flourishes, and where consumers can trust the authenticity of their purchases. Join us in this vital mission to protect the market and empower businesses – together, we'll build a more honest and vibrant commercial landscape.</p>
+                <a href="#about"><button class="cta">Know More</button></a>
+            </div>
+
+        </div>
+        <div class="missionholder">
+            <div class="mission">
+                <h3>Mission</h3>
+                <p>To safeguard innovation, protect intellectual property rights, and foster a fair and competitive marketplace by relentlessly combating product duplication and counterfeiting. We strive to empower local and indigenous businesses, ensuring their products retain value in the market while educating consumers about the perils of counterfeit goods.</p>
+            </div>
+            <div class="mission">
+                <h3>vision</h3>
+                <p>To be a global leader in the fight against product duplication and counterfeiting, driving economic growth and innovation. We envision a world where local and indigenous products thrive, consumers make informed choices, and intellectual property rights are respected, ensuring a level playing field for all businesses while preserving the integrity of markets.</p>
+            </div>
+        </div>
+    </section>
+    <div class="cardsection">
+        <h2 class="sectionheading">Our Services</h2>
+        <div class="cardholder">
+            <div class="card">
+                <h3>Intellectual Property Protection</h3>
+                <p> NADB can assist businesses in registering and protecting their intellectual property rights, such as patents, trademarks, and copyrights. This service ensures that their innovations are safeguarded from duplication and counterfeiting.</p>
+            </div>
+            <div class="card">
+                <h3>Counterfeit Detection &
+                    <li>Investigation</li></h3>
+                <p>NADB can conduct investigations to identify counterfeit products in the market. This service helps businesses take legal action against those responsible for product duplication and counterfeiting.</p>
+            </div>
+            <div class="card">
+                <h3>Marketplace Integrity Advocacy</h3>
+                <p>NADB can advocate for stronger laws and regulations aimed at deterring product duplication and counterfeiting. This service involves working with policymakers to create a more robust legal framework for intellectual property protection.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--<section class="testimonials">
+        <h2 class="sectionheading">Testimonials</h2>
+        <div class="slider-container">
+            <div class="testimonial active">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h4>John Doe</h4>
+            </div>
+            <div class="testimonial">
+                <p>Nulla facilisi. Proin hendrerit dui nec ante.</p>
+                <h4>Jane Smith</h4>
+            </div>
+            <!-- Add more testimonials here -->
+        </div>
+        <a class="t-prev" onclick="changeTestimonial(-1)">&#8592;</a>
+        <a class="t-next" onclick="changeTestimonial(1)">&#8594;</a>
+    </section>
+    <footer>
+        <div class="footerlogo">
+            <img src="images/NADB LOGO FINAL PNG-04-02.png" alt="">
+        </div>
+        <div class="footercardholder">
+            <div class="footercard">
+                <img src="icons/call.svg" alt="">
+                <a href="tel:+919108534937">+91 91085 34937</a>
+            </div>
+            <div class="footercard">
+                <img src="icons/email.svg" alt="">
+                <a href="mailto:nadb.org.in">info@nadb.org.in</a>
+            </div>
+            <div class="footercard">
+                <img src="icons/whatsapp.svg" alt="">
+                <a href="https://wa.me/+919108534937">+91 91085 34937</a>
+
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>Copyright © 2023 <b>NADB</b>. All rights reserved. Design and Developed by<a href="https://theonesolution.co.in"><b>The One Solution</b></a></p>
+    </div>
+
+
+
+    <script src="js/carousel.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/testimonial.js"></script>
+</body>
+</html>
